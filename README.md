@@ -17,3 +17,5 @@
 * falsy values: false, 0, '', null, undefined, NaN, 0. Everything else is a truthy.
 
 * Not(`!`) has a higher precedence that `&&` and `||`. `&&` has a higher precedence that `||`.
+
+* In a switch structure when a case is evaluated to true, the next cases will not be evaluated! This is why we need to use `break` after each `case` is evaluated.
