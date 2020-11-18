@@ -18,4 +18,4 @@
 
 * Not(`!`) has a higher precedence that `&&` and `||`. `&&` has a higher precedence that `||`.
 
-* In a switch structure when a case is evaluated to true, the next cases will not be evaluated! This is why we need to use `break` after each `case` is evaluated.
+* In a switch structure when a case is evaluated to true, the next cases will not be evaluated and they are executed subsequently! This is why we need to use `break` after each `case` is evaluated.
