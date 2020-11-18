@@ -7,3 +7,13 @@
 * Strings are immutable in js.
 
 * `typeof` is an operator! just like `+` sign which is an operator.
+
+* An array is a special type of object so we can look inside the array using a dot.
+
+* In javascript almost everthing is an object even if it's not a real object, it is treated or interpreted as an object.
+
+* An empty string of text will be evaluated as false.
+
+* falsy values: false, 0, '', null, undefined, NaN, 0. Everything else is a truthy.
+
+* Not(`!`) has a higher precedence that `&&` and `||`. `&&` has a higher precedence that `||`.
