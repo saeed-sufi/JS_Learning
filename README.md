@@ -27,3 +27,14 @@
 * The `Map` method is perfect when you want to create a new array that is based on another array.
 
 * "Scope" is the biggest source of confusion regarding variables and "context" is the biggest source of confusion regarding objects.
+
+* "Scope" is like a one way street. The traffic only flows in one direction. Code can reach outwards to access a variable but it cannot reach inwards.
+
+* "let" uses a block scope whereas "var" uses a function scope.
+
+* The `this` keyword points towards the object that is executing the current function.
+
+* What `this` keyword points towards, changes depending on the "context".
+
+Learn javascript: Full stack from scratch
+Brad Schiff
