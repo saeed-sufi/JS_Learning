@@ -30,7 +30,7 @@
 
 * "Scope" is like a one way street. The traffic only flows in one direction. Code can reach outwards to access a variable but it cannot reach inwards.
 
-* "let" uses a block scope whereas "var" uses a function scope.
+* `let` uses a block scope whereas stupid `var` uses function scope.
 
 * The `this` keyword points towards the object that is executing the current function.
 
