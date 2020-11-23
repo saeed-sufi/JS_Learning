@@ -36,5 +36,7 @@
 
 * What `this` keyword points towards, changes depending on the "context".
 
+* JS don't care about the type of elements of an array: let a = [1, "saeed', NaN, null, true]
+
 Learn javascript: Full stack from scratch
 Brad Schiff
