@@ -38,5 +38,7 @@
 
 * JS don't care about the type of elements of an array: let a = [1, "saeed', NaN, null, true]
 
+* Arrays are special types of objects where the keys are an ordered set of indices. 
+
 Learn javascript: Full stack from scratch
 Brad Schiff
