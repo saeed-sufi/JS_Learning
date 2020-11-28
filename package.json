@@ -1,0 +1,17 @@
+{
+  "name": "1-js_learning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "codemirror": "^5.58.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saeed-sufi/JS_Learning.git"
+  },
+  "homepage": "https://github.com/saeed-sufi/JS_Learning#readme"
+}
