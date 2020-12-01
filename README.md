@@ -40,5 +40,9 @@
 
 * Arrays are special types of objects where the keys are an ordered set of indices. 
 
+* Put helper functions after the main code. 
+
+* Remember to take benefit of `continue` directive to avoid extra nesting.
+
 Learn javascript: Full stack from scratch
 Brad Schiff
