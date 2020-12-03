@@ -44,5 +44,16 @@
 
 * Remember to take benefit of `continue` directive to avoid extra nesting.
 
-Learn javascript: Full stack from scratch
-Brad Schiff
+* Doing maths is “safe” in JavaScript. At worst, we’ll get NaN as the result.
+
+* In JavaScript, null is not a “reference to a non-existing object” or a “null pointer” like in some other languages. It’s just a special value which represents “nothing”, “empty” or “value unknown”. Normally, one uses null to assign an “empty” or “unknown” value to a variable (instead of using 'undefined')
+
+* The result of typeof null is "object". That’s an officially recognized error in typeof behavior
+
+* The word “modal” means that the visitor can’t interact with the rest of the page, press other buttons, etc, until they have dealt with the window. 
+
+* Some languages (namely PHP) treat "0" as false. But in JavaScript, a non-empty string is always true.
+  
+* 'expressions' produce results whereas 'statements' do actions. Function expressions produce immediate results whereas function declarations do not.
+
+* This keyword is only assigned a value when an object calles a method.
