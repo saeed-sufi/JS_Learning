@@ -57,3 +57,11 @@
 * 'expressions' produce results whereas 'statements' do actions. Function expressions produce immediate results whereas function declarations do not.
 
 * This keyword is only assigned a value when an object calles a method.
+
+* Don’t use comparisons >= > < <= with a variable which may be null/undefined, unless you’re really sure of what you’re doing. If a variable can have these values, check for them separately.
+
+* AND returns the first falsy value while OR returns the first truthy one.
+
+* The important difference between them is that:
+  * || returns the first truthy value.
+  * ?? returns the first defined value.
