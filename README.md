@@ -67,4 +67,5 @@
   * ?? returns the first defined value.
 * The combination “infinite loop + break as needed” is great for situations when a loop’s condition must be checked not in the beginning or end of the loop, but in the middle or even in several places of its body.
   
+ * If a function does not return a value, it is the same as if it returns undefine
  
