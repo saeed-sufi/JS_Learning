@@ -40,5 +40,34 @@
 
 * Arrays are special types of objects where the keys are an ordered set of indices. 
 
-Learn javascript: Full stack from scratch
-Brad Schiff
+* Put helper functions after the main code. 
+
+* Remember to take benefit of `continue` directive to avoid extra nesting.
+
+* Doing maths is “safe” in JavaScript. At worst, we’ll get NaN as the result.
+
+* Values null and undefined are special: they equal == each other and don’t equal anything else.
+
+* In JavaScript, null is not a “reference to a non-existing object” or a “null pointer” like in some other languages. It’s just a special value which represents “nothing”, “empty” or “value unknown”. Normally, one uses null to assign an “empty” or “unknown” value to a variable (instead of using 'undefined')
+
+* The result of typeof null is "object". That’s an officially recognized error in typeof behavior
+
+* The word “modal” means that the visitor can’t interact with the rest of the page, press other buttons, etc, until they have dealt with the window. 
+
+* Some languages (namely PHP) treat "0" as false. But in JavaScript, a non-empty string is always true.
+  
+* 'expressions' produce results whereas 'statements' do actions. Function expressions produce immediate results whereas function declarations do not.
+
+* This keyword is only assigned a value when an object calles a method.
+
+* Don’t use comparisons >= > < <= with a variable which may be null/undefined, unless you’re really sure of what you’re doing. If a variable can have these values, check for them separately.
+
+* AND returns the first falsy value while OR returns the first truthy one.
+
+* The important difference between them is that:
+  * || returns the first truthy value.
+  * ?? returns the first defined value.
+* The combination “infinite loop + break as needed” is great for situations when a loop’s condition must be checked not in the beginning or end of the loop, but in the middle or even in several places of its body.
+  
+ * If a function does not return a value, it is the same as if it returns undefine.
+ 
