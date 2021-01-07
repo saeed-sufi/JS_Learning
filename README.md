@@ -71,3 +71,7 @@
   
  * If a function does not return a value, it is the same as if it returns undefine.
  
+ * ... The proper way to characterize them is that == checks for value equality with coercion allowed, and === checks for value equality without allowing coercion; === is often called “strict equality” for this reason.
+ 
+ * arrays are by default coerced to strings by simply joining all the values with commas (,) in between. `a=[1,2,3]; b="1,2,3"; a==b \\true`
+ 
