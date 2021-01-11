@@ -75,3 +75,4 @@
  
  * arrays are by default coerced to strings by simply joining all the values with commas (,) in between. `a=[1,2,3]; b="1,2,3"; a==b \\true`
  
+ * specification says that `NaN` is neither greater than nor less than any other value.
