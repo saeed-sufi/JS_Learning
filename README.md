@@ -18,8 +18,6 @@
 
 * Not(`!`) has a higher precedence than `&&` and `||`. `&&` has a higher precedence that `||`.
 
-* In a switch structure when a case is evaluated to true, the next cases will not be evaluated and they are executed subsequently! This is why we need to use `break` after each `case` is evaluated.
-
 * A higher order function is a function that either: 1- accepts a function as an argument or 2- returns a function as a result.
 
 * Javascript is special in the sense that functions are considered first class citizens or entities. So, we can pass them around as arguments, we can return them inside a function and we can even assign them to a variable. 
