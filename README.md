@@ -76,3 +76,7 @@
  * specification says that `NaN` is neither greater than nor less than any other value.
 
 * `forEach` method unlike `map` or `reduce`, returns `undefined` so it's not chainable.
+
+* use `find` method on arrays to search for a unique id or identifier. use `filter` for searching in an array and get all the elements that pass the criteria.
+
+* remember that `sort` method mutates the original array!
