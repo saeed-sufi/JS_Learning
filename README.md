@@ -80,3 +80,8 @@
 * use `find` method on arrays to search for a unique id or identifier. use `filter` for searching in an array and get all the elements that pass the criteria.
 
 * remember that `sort` method mutates the original array!
+
+* a variable declared with `var` in the global context, is attached to the global object (`window` in the browser) but variables that are declared with `let` and `const` are not attached to the global objects.
+
+* `innerText` property will return only the text inside the element without any formatting applied to it but `textContent` property will return the text keeping the format. `innerText` is aware of what is going to show up in the page.
+
