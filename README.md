@@ -6,13 +6,11 @@
 
 * Strings are immutable in js.
 
-* `typeof` is an operator! just like `+` sign which is an operator.
+* `typeof` is an operator! just like `+` sign.
 
 * An array is a special type of object so we can look inside the array using a dot.
 
-* In javascript almost everthing is an object even if it's not a real object, it is treated or interpreted as an object.
-
-* An empty string of text will be evaluated as false.
+* In javascript almost everthing is an object; even if it's not a real object, it is treated or interpreted as an object.
 
 * falsy values: false, 0, '', null, undefined, NaN, 0. Everything else is a truthy.
 
@@ -62,12 +60,13 @@
 
 * AND returns the first falsy value while OR returns the first truthy one.
 
-* The important difference between them is that:
+* ... the important difference between them is that:
   * || returns the first truthy value.
   * ?? returns the first defined value.
+  
 * The combination “infinite loop + break as needed” is great for situations when a loop’s condition must be checked not in the beginning or end of the loop, but in the middle or even in several places of its body.
   
- * If a function does not return a value, it is the same as if it returns undefine.
+ * If a function does not return a value, it is the same as if it returns undefined.
  
  * ... The proper way to characterize them is that == checks for value equality with coercion allowed, and === checks for value equality without allowing coercion; === is often called “strict equality” for this reason.
  
