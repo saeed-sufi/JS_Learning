@@ -84,3 +84,5 @@
 
 * `innerText` property will return only the text inside the element without any formatting applied to it but `textContent` property will return the text keeping the format. `innerText` is aware of what is going to show up in the page.
 
+* `__proto__` is a 'reference' to the object `prototype`
+
