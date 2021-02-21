@@ -86,3 +86,8 @@
 
 * `__proto__` is a 'reference' to the object `prototype`
 
+* to find out the value of `this` follow these 3 checks: 1. is the function defined in an arrow function? 2. did you call `bind, apply, call` on the function when you invoked it? 3. All other cases (the value of `this` would be whatever is to the left of `.`)
+
+* the first argument of `bind, call, apply` is the value of `this` that we want to execute the function with. 
+
+* in order to share information between different methods in a class, we assign that information to an instance variable ex. `this.timer = ...`
