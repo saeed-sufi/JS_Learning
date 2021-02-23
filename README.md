@@ -32,6 +32,8 @@
 
 * What `this` keyword points towards, changes depending on the "context".
 
+* Never ever forget to initialize a variable with either `let` or `const`. Very strange behaviour and bugs may occur!
+
 * JS don't care about the type of elements of an array: let a = [1, "saeed', NaN, null, true]
 
 * Arrays are special types of objects where the keys are an ordered set of indices. 
