@@ -93,3 +93,9 @@
 * the first argument of `bind, call, apply` is the value of `this` that we want to execute the function with. 
 
 * in order to share information between different methods in a class, we assign that information to an instance variable ex. `this.timer = ...`
+
+* `window.location` gives information about the url you're visiting. 
+
+* Use `btoa` and `atob` to convert ascci to base64 and viceversa.
+
+* you can use `now` service to get a live version of your app very easily. Just do `npx now`.
