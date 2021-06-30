@@ -124,6 +124,7 @@
 
 * When using `querySelectorAll()` use `scope` pseudo-class to make `querySelectorAll` to only match selectors on descendants of the base element. 
 
-```const select = document.querySelector('.select');
+```
+const select = document.querySelector('.select');
 const inner = select.querySelectorAll(':scope .outer .inner');
 ```
