@@ -121,3 +121,9 @@
 * Browsers download an image, as soon as they see a `src` or `srcset` attribute in the `img` tag.
 
 * By adding Modernizr to your project you would be able to check what features the browser support on the fly.
+
+* When using `querySelectorAll()` use `scope` pseudo-class to make `querySelectorAll` to only match selectors on descendants of the base element. 
+
+```const select = document.querySelector('.select');
+const inner = select.querySelectorAll(':scope .outer .inner');
+```
