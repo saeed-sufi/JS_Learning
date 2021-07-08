@@ -162,3 +162,10 @@ const inner = select.querySelectorAll(':scope .outer .inner');
 
 * `splice` is a very powerfull method for arrays. It can remove, insert, add or replace elements in an array.
 
+* Methods to search in an array: `indexOf()`, `lastIndexOf()`, `includes()`. `find()`, `findIndex()`, `filter()`. With find and findIndex if no element is found, it will return `undefined` and `filter` will return an empty array.
+
+* To flatten an array we use `reduce` method. There is also a `reduceRight()` method which starts from `array.length - 1` element and goes toward `0th` element. 
+
+* The `sort()` method compares elements as if they are strings even when sorting numeric values. That's why we need to use the callback function which is called the `compare` function. 
+
+* Always square brackets on the left hand side, indicate destructuring not an array. 
