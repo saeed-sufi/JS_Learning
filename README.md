@@ -137,3 +137,28 @@ const inner = select.querySelectorAll(':scope .outer .inner');
 * `NaN == NaN` will return false because `NaN` returns a unique value each time you reference it. In order to check if some value is NaN you should always use `isNaN()` method. If we check for `isFinite()`, it checks not only for `NaN` but also for `Infinity`. In short, `isFinite` checks whether we have a regular number or not. 
 
 * 3 must-know points about arrow functions: 1. `this` object is not changed using arrow functions. 2. you cannot use `arguments` with arrow functions. 3. you cannot use `new` keyword to call arrow functions. 
+
+* We use `IIFE` to avoid global leakage. We also have `IIAF` which stands for Immediately Invoked Arrow Function. 
+
+* When you are using `closure` you are making private members, globally available. Do it when needed not always. 
+
+* `sum(5)(6)` is an example of `currying`. It's a unique way to call inner functions where you can pass arguments partially or pass multiple arguments in a function but one argument at a time. `currying` is very useful in functional programming. 
+
+* When you are creating a data structure and want it to be iterable, you need to use `Symbol.iterator`. 
+
+* `generator` functions help you pause and resume the code. Normally functions return single value but with generators we can return multiple values is phases.
+
+* `mark and sweep` algorithm is used for `garbage collection` which starts from root element and marks referenced element and clear `unreachable` ones. 
+
+* Error handling with `try...catch` with let you handle the errors at `run time` which is better than facing with errors in `compile time`. We use `try...catch` to handle the errors without stopping the code execution.
+
+* You can use `throw` operator to notify the user about the errors. The error object inside `throw` can be of any error class types such as `Error`, `TypeError`, `SyntaxError`.
+
+* `finally` block is always executed. You can omit `catch` block and use only `try...finally` blocks to let go of the error and continue with your program regardless of what error could have occured in a `catch` block.
+
+* `for ... in` loop returns the array `indices` whereas `for ... of` loop returns the array `elements`.
+
+* `forEach` loop cannot be stopped in between. If for some reason you need to break out of the loop, do not use `forEach`.
+
+* `splice` is a very powerfull method for arrays. It can remove, insert, add or replace elements in an array.
+
