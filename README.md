@@ -128,3 +128,12 @@
 const select = document.querySelector('.select');
 const inner = select.querySelectorAll(':scope .outer .inner');
 ```
+* Always use `{` on the same line of the beforehand code as js might mess things up by `automatic semicolon insertion`.
+
+* When we use `...` with functions to deal with any number of parameters, then we call it `rest` operator i.e for the rest of parameters. In ES5, we had to use `arguments` which is an array-like object (key: value) but `arguments` does not work in arrow functions. So, with arrow functions we have to use `...` syntax.
+
+* All numbers in js are stored in 64-bit format, so if any number cannot be stored in 64-bit format, return `infinity`.  
+
+* `NaN == NaN` will return false because `NaN` returns a unique value each time you reference it. In order to check if some value is NaN you should always use `isNaN()` method. If we check for `isFinite()`, it checks not only for `NaN` but also for `Infinity`. In short, `isFinite` checks whether we have a regular number or not. 
+
+* 3 must-know points about arrow functions: 1. `this` object is not changed using arrow functions. 2. you cannot use `arguments` with arrow functions. 3. you cannot use `new` keyword to call arrow functions. 
