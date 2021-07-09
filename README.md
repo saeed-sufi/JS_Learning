@@ -92,6 +92,8 @@
 
 * the first argument of `bind, call, apply` is the value of `this` that we want to execute the function with. 
 
+* `call` can accept more than 2 arguments. `apply` accepts only two arguments and destructures the second argument. Both `call` and `apply` change the reference of `this` and they immediately call the function, whereas `bind` doesn't call the function.
+
 * in order to share information between different methods in a class, we assign that information to an instance variable ex. `this.timer = ...`
 
 * `window.location` gives information about the url you're visiting. 
@@ -169,3 +171,27 @@ const inner = select.querySelectorAll(':scope .outer .inner');
 * The `sort()` method compares elements as if they are strings even when sorting numeric values. That's why we need to use the callback function which is called the `compare` function. 
 
 * Always square brackets on the left hand side, indicate destructuring not an array. 
+
+* There are four ways to create a date object: 1. `new Data()` 2. `new Date(year, month, ..., milliseconds)` 3. `new Date(millisecond)` 4. `new Date(string)`
+
+* If your are using string to initiate a date object, abide by ISO format: `YYYY-MM-DDTHH:mm:ss:sssZ`
+
+* In any case of object creation, the basic idea is that we are creating a container to bundle data pieces. 
+
+* You can have dynamic key name in an object by putting the key inside []: `let obj = {[tempV]: 1001, ...}`. Also, when using classes, you can have dynamic properties and dynamic method names. 
+
+* If you want to make a clone (copy) of an object (pass it as value) in ES6 you can use `assign`: `const obj1 = Object.assign({}, obj)`.
+
+* In earlier versions of ES, a function could play the role of a class, that's why traditional functions can change the what `this` points to.  
+
+* If you need to have access to a class's methods, those method should be defined as `static`. In other words, we don't need to have an instance of a class to refer to a static member. Neither static methods nor static properties can be called on instances of the class. Instead, they're called on the class itself.
+
+* When creating a module which has services for which we do not need to instantiate the class, we use static members. 
+
+* `super` is the keyword which allows you to access parent class members. `super()`: calls parent constructor, `super.method()`: calls parent's methods and `super.property` access parent properties. 
+
+* If you need to import scripts directly into html files, use `<script type="module"> import {calc} from './calc.js'; calc() </script>` . Remember that all `named modules` must be imported using curly brackets: `import {sum , multiply} from './calc'`
+
+* In modern web build tools like web pack, if some imported modules are not used, then those modules get removed, that is `tree shaking`. 
+
+* `default export` means there will be one module per file. Many frameworks use this approach to export one function or class. 
