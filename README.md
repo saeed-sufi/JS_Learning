@@ -195,3 +195,11 @@ const inner = select.querySelectorAll(':scope .outer .inner');
 * In modern web build tools like web pack, if some imported modules are not used, then those modules get removed, that is `tree shaking`. 
 
 * `default export` means there will be one module per file. Many frameworks use this approach to export one function or class. 
+
+* Window has two main objects: `DOM` and `BOM`. `BOM` or Browser Object Model has various objects such as: `Screen`, `Location`, `Navigator`, `XMLHttpRequest`,...
+
+* `event.target` returns the reference of element which raised the event. From `target` to `ancestor`, the `event` object traverses. This traversal is called as `propagation` or `event propagation`. The default path of `event propagation` or `event bubbling` is from bottom to top. If you want to stop this behaviour, you can use `event.stopPropagation()`.
+
+* If we want to change the default propagation path i.e make it top to bottom, then it is called `capturing`. To do so, we use `addEventListener()`.
+
+* The third argument of `addEventListener` is a boolean to change between `bubble phase` which is the default behaviour and `capture phase`. Set it to `true` to activate `capture phase`.
