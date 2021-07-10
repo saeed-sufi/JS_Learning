@@ -180,6 +180,8 @@ const inner = select.querySelectorAll(':scope .outer .inner');
 
 * You can have dynamic key name in an object by putting the key inside []: `let obj = {[tempV]: 1001, ...}`. Also, when using classes, you can have dynamic properties and dynamic method names. 
 
+* If you want to make a clone (copy) of an array, you can use `spread` operator to do so: `cosnt arr2 = [... arr1]`.
+
 * If you want to make a clone (copy) of an object (pass it as value) in ES6 you can use `assign`: `const obj1 = Object.assign({}, obj)`.
 
 * In earlier versions of ES, a function could play the role of a class, that's why traditional functions can change the what `this` points to.  
@@ -203,3 +205,7 @@ const inner = select.querySelectorAll(':scope .outer .inner');
 * If we want to change the default propagation path i.e make it top to bottom, then it is called `capturing`. To do so, we use `addEventListener()`.
 
 * The third argument of `addEventListener` is a boolean to change between `bubble phase` which is the default behaviour and `capture phase`. Set it to `true` to activate `capture phase`.
+
+* Use `Array.from()` method to convert an array-like object into an array. 
+
+* `childNodes` vs `children`: childNodes counts white spaces and text nodes as well whereas `children` only returns html elements.
