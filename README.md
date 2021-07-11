@@ -209,3 +209,29 @@ const inner = select.querySelectorAll(':scope .outer .inner');
 * Use `Array.from()` method to convert an array-like object into an array. 
 
 * `childNodes` vs `children`: childNodes counts white spaces and text nodes as well whereas `children` only returns html elements.
+
+* To find element references, 1. `getElementById()` 2. `getElementsByTagName()` 3. `getElementsByClassName()` 4. `getElementsByName()`.
+
+* `element.getElementById()` is not valid because searching of element by id is always for entire document and not for specific region. 
+
+* In order to deactivate an event of element you can `return false` on that event: ` oncontextmenu = "return false" `. Or you can use `event.preventDefault()`. You can also use `oncopy = "return false"` to prevent copying of an element. 
+
+* In order to check which mouse button is clicked, you can `event.button == 0` for the left click, `event.button == 1` for the middle click and `event.button == 2` for the right click. 
+
+* Various properties of `MouseEvent`which gives information about the position of the mouse: `clientX, clientY` and `pageX, pageY` and `screenX, screenY`. Difference between `client` and `page` is that on scrollable pages, `client` reference is the window whereas the `page` reference is the document. 
+
+* Consider using `event.code` and `event.key` when dealing with keyboard events. `event.key` return just the value. 
+
+* `onchange` vs `onblur`: `onchange` is fired when the focus is lost and at the same time the content is also has changed. 
+
+* `resolve` and `reject` are like `return` statement in that the statements after them are never executed. 
+
+* Every `then` should return a promise when you are chaining the promise with multiple processes. 
+
+* With `Promise.all([promise1, promise2])` it doesn't matter how long each promise is going to take. Promises are returned in the sequence you specify in `Promise.all([])` array argument. 
+
+* `Promise.all()` won't work if any of the promises is rejected. For this reason, we have `Promise.allSettled()` method which waits for all promises regardless of their state and returns Promise at the end. 
+
+* `race()` method returns a promise as soon as any of the promise returns the state from the iterable list provided. If the `race([])` array is empty, the promise will stay in pending state forever.
+
+* `event.metakey` for macs and `event.ctrlKey` for windows to check if command or ctrl key is pressed. We also have `event.altKey` and `event.shiftKey`
