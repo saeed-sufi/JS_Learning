@@ -235,3 +235,7 @@ const inner = select.querySelectorAll(':scope .outer .inner');
 * `race()` method returns a promise as soon as any of the promise returns the state from the iterable list provided. If the `race([])` array is empty, the promise will stay in pending state forever.
 
 * `event.metakey` for macs and `event.ctrlKey` for windows to check if command or ctrl key is pressed. We also have `event.altKey` and `event.shiftKey`
+
+* When an async function returns a value, it is implied that the state is resolved with that value. So you don't need to write a return statement in an async function. and if you want to add reject state to the async function, you need to use `throw new Error()`. 
+
+* There are two ways to use an `await` statement: 1. write it in an `async` function. 2. Use an async IIFE.
