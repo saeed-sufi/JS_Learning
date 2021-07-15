@@ -239,3 +239,17 @@ const inner = select.querySelectorAll(':scope .outer .inner');
 * When an async function returns a value, it is implied that the state is resolved with that value. So you don't need to write a return statement in an async function. and if you want to add reject state to the async function, you need to use `throw new Error()`. 
 
 * There are two ways to use an `await` statement: 1. write it in an `async` function. 2. Use an async IIFE.
+
+* method argument in any http request method could be one of these: `get` to get or fetch the data. `post` to add or insert data. `put` to edit data. `delete` to delete data.
+
+* `open` method of request, is like a `set` method.
+
+* `onreadystatechange` property is a very useful method and is fired a property called `readyState` change. `readyState` can have 5 different values to tackle with different steps of the request.  
+
+* `load` event is executed when the ajax call is successfully completed. 
+
+* If you have already consumed the response data like this: `let data = await response.text()` then you cannot read data again like this `data = await response.json()`  because this is the stream which is already read and entire chunk of data is saved into `data`. 
+
+* If you have to deal with images then use: `data = await response.blob()` which is used to recieve binary data. 
+
+* `toString.call()` is very usefull when trying to find out the specific type of values.
